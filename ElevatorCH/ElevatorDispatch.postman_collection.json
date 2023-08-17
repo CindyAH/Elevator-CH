@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "22e85d0a-70e9-4dec-9375-ca378ddb42d0",
+		"name": "ElevatorDispatch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "651120"
+	},
+	"item": [
+		{
+			"name": "Stop car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/ElevatorDispatch/StopCar?floorName=3&carId=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElevatorDispatch",
+						"StopCar"
+					],
+					"query": [
+						{
+							"key": "floorName",
+							"value": "3"
+						},
+						{
+							"key": "carId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Call car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/ElevatorDispatch/CallCar?floorName=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElevatorDispatch",
+						"CallCar"
+					],
+					"query": [
+						{
+							"key": "floorName",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get next call for car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/ElevatorDispatch/GetNextCallForCar?carId=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElevatorDispatch",
+						"GetNextCallForCar"
+					],
+					"query": [
+						{
+							"key": "carId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all floors for car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/ElevatorDispatch/GetAllFloorsForCar?carId=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElevatorDispatch",
+						"GetAllFloorsForCar"
+					],
+					"query": [
+						{
+							"key": "carId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
